@@ -19,7 +19,7 @@
   "main": "lib",
   "repository": "yeoman/insight",
   "scripts": {
-    "test": "mocha --timeout 20000 --reporter spec test/test.js"
+    "test": "mocha -w --timeout 20000 --reporter spec test/test.js"
   },
   "files": [
     "lib"
@@ -29,6 +29,7 @@
     "chalk": "^1.0.0",
     "configstore": "^0.3.1",
     "inquirer": "^0.8.0",
+    "keen-js": "^3.2.4",
     "lodash.debounce": "^3.0.1",
     "object-assign": "^2.0.0",
     "os-name": "^1.0.0",
