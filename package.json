@@ -19,7 +19,8 @@
   "main": "lib",
   "repository": "azukiapp/insight-keen-io",
   "scripts": {
-    "test": "mocha -w --timeout 2000 --reporter spec test/test.js"
+    "test": "mocha -w --timeout 2000 --reporter spec test/test.js",
+    "deploy": "./bin/npm-deploy"
   },
   "files": [
     "lib"
