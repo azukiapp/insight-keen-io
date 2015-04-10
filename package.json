@@ -16,6 +16,16 @@
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
+  "contributors": [
+    {
+      "name": "Julio makdisse Saito",
+      "email": "saitodisse@gmail.com"
+    },
+    {
+      "name": "Marcus Gadbem",
+      "email": "mcsgad@gmail.com"
+    }
+  ],
   "main": "lib",
   "repository": "azukiapp/insight-keen-io",
   "scripts": {
