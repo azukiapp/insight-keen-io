@@ -1,4 +1,4 @@
-# Insight [![Build Status](https://secure.travis-ci.org/yeoman/insight.svg?branch=master)](http://travis-ci.org/yeoman/insight)
+# InsightKeenIo [![Build Status](https://secure.travis-ci.org/yeoman/InsightKeenIo.svg?branch=master)](http://travis-ci.org/yeoman/InsightKeenIo)
 
 > Understand how your tool is being used by anonymously reporting usage metrics to [Google Analytics](http://www.google.com/analytics/)
 or [Yandex.Metrica](http://metrica.yandex.com/)
@@ -19,20 +19,20 @@ or [Yandex.Metrica](http://metrica.yandex.com/)
 
 ### Google Analytics (GA)
 
-Currently Insight should to be used with GA set up as web tracking due to use of URLs. Future plan include refactoring to work with GA set up for app-based tracking and the [Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/).
+Currently InsightKeenIo should to be used with GA set up as web tracking due to use of URLs. Future plan include refactoring to work with GA set up for app-based tracking and the [Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/).
 
-For debugging, Insight can track OS version, node version and version of the app that implements Insight. Please set up custom dimensions per below screenshot. This is a temporary solution until Insight is refactored into app-based tracking.
+For debugging, InsightKeenIo can track OS version, node version and version of the app that implements InsightKeenIo. Please set up custom dimensions per below screenshot. This is a temporary solution until InsightKeenIo is refactored into app-based tracking.
 
 ![GA custom dimensions screenshot](screenshot-ga-custom-dimensions.png)
 
 
 ## Collected Data
 
-Insight cares deeply about the security of your user's data, and strives to be fully transparent with what it tracks. All data is sent via HTTPS secure connections. Insight provides API to offer an easy way for users to opt-out at any time.
+InsightKeenIo cares deeply about the security of your user's data, and strives to be fully transparent with what it tracks. All data is sent via HTTPS secure connections. InsightKeenIo provides API to offer an easy way for users to opt-out at any time.
 
-Below is what Insight is capable of tracking. Individual implementation can choose to not track some items.
+Below is what InsightKeenIo is capable of tracking. Individual implementation can choose to not track some items.
 
-- The version of the module that implements Insight
+- The version of the module that implements InsightKeenIo
 - Module commands (e.g. install / search)
 - Name and version of packages involved with command used
 - Version of node.js & OS for developer debugging
@@ -44,31 +44,31 @@ Below is what Insight is capable of tracking. Individual implementation can choo
 ### Google Analytics
 
 ```js
-var Insight = require('insight');
+var InsightKeenIo = require('InsightKeenIo');
 var pkg = require('./package.json');
 
-var insight = new Insight({
+var InsightKeenIo = new InsightKeenIo({
 	// Google Analytics tracking code
 	trackingCode: 'UA-XXXXXXXX-X',
 	pkg: pkg
 });
 
 // ask for permission the first time
-if (insight.optOut === undefined) {
-	return insight.askPermission();
+if (InsightKeenIo.optOut === undefined) {
+	return InsightKeenIo.askPermission();
 }
 
-insight.track('foo', 'bar');
+InsightKeenIo.track('foo', 'bar');
 // recorded in Analytics as `/foo/bar`
 ```
 
 ### Yandex.Metrica
 
 ```js
-var Insight = require('insight');
+var InsightKeenIo = require('InsightKeenIo');
 var pkg = require('./package.json');
 
-var insight = new Insight({
+var InsightKeenIo = new InsightKeenIo({
 	// Yandex.Metrica counter id
 	trackingCode: 'XXXXXXXXX'
 	trackingProvider: 'yandex',
@@ -76,12 +76,12 @@ var insight = new Insight({
 });
 
 // ask for permission the first time
-if (insight.optOut === undefined) {
-	return insight.askPermission();
+if (InsightKeenIo.optOut === undefined) {
+	return InsightKeenIo.askPermission();
 }
 
-insight.track('foo', 'bar');
-// recorded in Yandex.Metrica as `http://<package-name>.insight/foo/bar`
+InsightKeenIo.track('foo', 'bar');
+// recorded in Yandex.Metrica as `http://<package-name>.InsightKeenIo/foo/bar`
 ```
 
 or a [live example](https://github.com/yeoman/yeoman)
@@ -89,7 +89,7 @@ or a [live example](https://github.com/yeoman/yeoman)
 
 ## API
 
-### Insight(settings)
+### InsightKeenIo(settings)
 
 #### trackingCode
 

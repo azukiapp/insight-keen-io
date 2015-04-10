@@ -7,15 +7,15 @@ In addition to the regular tests via `npm test`, contributors should also ensure
 Please sign up for a free GA web-tracking account, then run below script using your tracking code:
 
 ```js
-var Insight = require('lib/insight.js');
+var InsightKeenIo = require('lib/InsightKeenIo.js');
 
-var insight = new Insight({
+var InsightKeenIo = new InsightKeenIo({
   trackingCode: 'UA-00000000-0', // replace with your test GA tracking code
   packageName: 'test app',
   packageVersion: '0.0.1'
 });
 
-insight.track('hello', 'sindre');
+InsightKeenIo.track('hello', 'sindre');
 ```
 
 Then visit GA's Real Time dashboard and ensure data is showing up:

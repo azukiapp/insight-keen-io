@@ -1,6 +1,6 @@
 {
-  "name": "insight",
-  "version": "0.5.3",
+  "name": "InsightKeenIo-keen-io",
+  "version": "0.5.30",
   "description": "Understand how your tool is being used by anonymously reporting usage metrics to an analtyics vendor, e.g. Google Analytics.",
   "keywords": [
     "npm",
@@ -17,9 +17,9 @@
     "url": "http://sindresorhus.com"
   },
   "main": "lib",
-  "repository": "yeoman/insight",
+  "repository": "azukiapp/InsightKeenIo-keen-io",
   "scripts": {
-    "test": "mocha -w --timeout 20000 --reporter spec test/test.js"
+    "test": "mocha -w --timeout 2000 --reporter spec test/test.js"
   },
   "files": [
     "lib"
@@ -34,6 +34,7 @@
     "object-assign": "^2.0.0",
     "os-name": "^1.0.0",
     "request": "^2.40.0",
+    "satelize": "^0.1.1",
     "tough-cookie": "^0.12.1"
   },
   "devDependencies": {
