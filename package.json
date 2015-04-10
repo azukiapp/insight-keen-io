@@ -1,5 +1,5 @@
 {
-  "name": "InsightKeenIo-keen-io",
+  "name": "insight-keen-io",
   "version": "0.5.30",
   "description": "Understand how your tool is being used by anonymously reporting usage metrics to an analtyics vendor, e.g. Google Analytics.",
   "keywords": [
@@ -17,7 +17,7 @@
     "url": "http://sindresorhus.com"
   },
   "main": "lib",
-  "repository": "azukiapp/InsightKeenIo-keen-io",
+  "repository": "azukiapp/insight-keen-io",
   "scripts": {
     "test": "mocha -w --timeout 2000 --reporter spec test/test.js"
   },
