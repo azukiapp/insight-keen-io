@@ -1,8 +1,8 @@
-# Insight-Keen-IO
+# InsightKeenIo-Keen-IO
 
-Insight implementation to work with keen-io only.
+InsightKeenIo implementation to work with keen-io only.
 
-based on original Insight from: https://github.com/yeoman/insight
+based on original InsightKeenIo from: https://github.com/yeoman/insight
 
 ## License
 

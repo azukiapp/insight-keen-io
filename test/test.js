@@ -7,7 +7,7 @@ var objectValues = require('object-values');
 var InsightKeenIo = require('../lib');
 
 describe('InsightKeenIo()', function () {
-	var InsightKeenIo = new InsightKeenIo({
+	var insight = new InsightKeenIo({
 		projectId: 'YOUR_PROJECT_ID',
 		writeKey: 'YOUR_WRITE_KEY'
 	});
@@ -24,7 +24,7 @@ describe('InsightKeenIo()', function () {
 			cb();
 		};
 
-		InsightKeenIo.track("agent", dataGiven);
+		insight.track("agent", dataGiven);
 	});
 
 	it('should throw exception when trackingCode or packageName is not provided', function (cb) {
@@ -55,7 +55,7 @@ describe('config providers', function () {
 			set: sinon.spy()
 		};
 
-		this.InsightKeenIo = new InsightKeenIo({
+		this.insight = new InsightKeenIo({
 			projectId: '5526968d672e6c5a0d0ebec6',
 			writeKey: write_key_string,
 			config: this.config
@@ -63,13 +63,13 @@ describe('config providers', function () {
 	});
 
 	it('should access the config object for reading', function () {
-		assert(this.InsightKeenIo.optOut);
+		assert(this.insight.optOut);
 		assert(this.config.get.called);
 	});
 
 	it('should access the config object for writing', function () {
 		var sentinel = {};
-		this.InsightKeenIo.optOut = sentinel;
+		this.insight.optOut = sentinel;
 		assert(this.config.set.calledWith('optOut', sentinel));
 	});
 });
