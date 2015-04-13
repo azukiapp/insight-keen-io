@@ -1,6 +1,6 @@
 {
   "name": "insight-keen-io",
-  "version": "0.5.31",
+  "version": "0.5.32",
   "description": "Understand how your tool is being used by anonymously reporting usage metrics to an analtyics vendor, e.g. Google Analytics.",
   "keywords": [
     "npm",
