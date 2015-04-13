@@ -3,7 +3,7 @@
 var assert = require('assert');
 var spawn = require('child_process').spawn;
 var sinon = require('sinon');
-var objectValues = require('object-values');
+// var objectValues = require('object-values');
 var InsightKeenIo = require('../lib');
 
 describe('InsightKeenIo()', function () {
@@ -19,7 +19,7 @@ describe('InsightKeenIo()', function () {
 			"ip_address" : "${keen.ip}",
 		};
 
-		insight.track("FROM_TEST", dataGiven, function (data) {
+		insight.track("FROM_TEST", dataGiven).then(function (data) {
 			assert.ok(data[0].created);
 			done();
 		});
@@ -38,7 +38,7 @@ describe('InsightKeenIo()', function () {
 			"ip_address" : "${keen.ip}",
 		};
 
-		insight.track("FROM_TEST_WITH_FORK", dataGiven, function (is_zero) {
+		insight.track("FROM_TEST_WITH_FORK", dataGiven).then(function (is_zero) {
 			assert.equal(is_zero, 0);
 			done();
 		});
