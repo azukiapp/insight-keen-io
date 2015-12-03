@@ -33,11 +33,3 @@ var insight = new InsightKeenIo({
 });
 
 trackIt();
-
-// FIXME: must be stored
-// insight.askPermission('Do you accept?', function () {
-// 	var tracking_allowed = !(insight.optOut);
-// 	if (tracking_allowed) {
-// 		trackIt();
-// 	}
-// });
