@@ -39,14 +39,9 @@
   "dependencies": {
     "async": "^0.9.0",
     "bluebird": "^2.9.27",
-    "configstore": "^0.3.1",
     "jstream": "^0.2.8",
     "lodash": "^3.6.0",
-    "lodash.debounce": "^3.0.1",
-    "object-assign": "^2.0.0",
-    "request": "^2.45.0",
-    "satelize": "^0.1.1",
-    "tough-cookie": "^0.12.1"
+    "request": "^2.45.0"
   },
   "devDependencies": {
     "mocha": "*",

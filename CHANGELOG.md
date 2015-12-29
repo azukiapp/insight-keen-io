@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## v0.8.0 - (2015-12-29)
+
+* Enhancements
+  * [Core] Removing unnecessary dependencies;
+
+* Bug
+  * [Core] Fixing to use queue and not '_data' to send analytics informations;
+
 ## v0.7.2 - (2015-12-29)
 
 * Bug
