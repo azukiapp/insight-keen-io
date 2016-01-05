@@ -17,12 +17,10 @@ describe('InsightKeenIo()', function () {
 			"ip_address" : "${keen.ip}",
 		};
 
-		insight.track("FROM_TEST", dataGiven)
-		.then(function (data) {
+		insight.track("FROM_TEST", dataGiven, function(err, data) {
 			assert.ok(data[0].created);
 			done();
 		});
-
 	});
 
 	it('should track work with fork', function (done) {
@@ -37,11 +35,10 @@ describe('InsightKeenIo()', function () {
 			"ip_address" : "${keen.ip}",
 		};
 
-		insight.track("FROM_TEST_WITH_FORK", dataGiven).then(function (is_zero) {
+		insight.track("FROM_TEST_WITH_FORK", dataGiven, function (err, is_zero) {
 			assert.equal(is_zero, 0);
 			done();
 		});
-
 	});
 
 
