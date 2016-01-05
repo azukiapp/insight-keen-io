@@ -1,6 +1,6 @@
 {
   "name": "insight-keen-io",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Understand how your tool is being used by anonymously reporting usage metrics to an analtyics vendor, e.g. Google Analytics.",
   "keywords": [
     "npm",
@@ -37,7 +37,7 @@
     "lib"
   ],
   "dependencies": {
-    "async": "^0.9.0",
+    "async": "^1.5.1",
     "jstream": "^0.2.8",
     "lodash": "^3.6.0",
     "request": "^2.45.0"
